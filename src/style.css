@@ -1,3 +1,69 @@
 body {
   margin: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+}
+
+.header .image-logo {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  max-width: 1200px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.header .nav {
+  display: flex;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-link {
+  height: 60px;
+
+  line-height: 60px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #f60;
+}
+
+.header .nav .nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.header .nav .nav-link:hover {
+  color: deepskyblue;
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+
+a.is-active {
+  position: relative;
+  text-decoration: none;
+  color: deepskyblue;
+}
+
+a.is-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: blue;
 }
